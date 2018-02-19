@@ -1,0 +1,30 @@
+<canvas tabindex="1" #canvas></canvas>
+<div class="arrows">
+  <div>
+    <i 
+      class="fas fa-arrow-circle-up"
+      [ngClass]="axis.up ? 'pressed':''">
+    </i>
+  </div>
+  <div>
+    <i 
+      class="fas fa-arrow-circle-left"
+      [ngClass]="!!axis.left ? 'pressed':''">
+    </i>
+    <i
+      class="fas fa-arrow-circle-right"
+      [ngClass]="axis.right ? 'pressed':''">
+    </i>
+  </div>
+  <div>
+    <i 
+      class="fas fa-arrow-circle-down"
+      [ngClass]="axis.down ? 'pressed':''">
+    </i>
+  </div>
+</div>
+<div class="space-position">
+  X : {{rectAttributes.x}}
+  <br>
+  Y : {{rectAttributes.y}}
+</div>
